@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+/* main {
+  overflow: hidden;
+  width: 1080px;
+  height: 1920px;
+} */
+
+.mosaic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1080px;
+  height: 1920px;
+}
+
+
+
+.line {
+	stroke-dasharray: 3000;
+	stroke-dashoffset:3000;
+	-webkit-animation: LINE 15s ease-in 0s forwards;
+	animation: LINE 15s ease-in 0s forwards;
+}
+@keyframes LINE{
+	0%{stroke-dashoffset:3000;fill-opacity: 0;}
+  50%{stroke-dashoffset:0;fill-opacity: 0;}
+	100%{stroke-dashoffset:-3000;fill-opacity: 1;}
+}
+@-webkit-keyframes LINE{
+  0%{stroke-dashoffset:3000;fill-opacity: 0;}
+  50%{stroke-dashoffset:0;fill-opacity: 0;}
+	100%{stroke-dashoffset:-3000;fill-opacity: 1;}
+}

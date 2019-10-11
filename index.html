@@ -2,45 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <style>
-      body {
-        margin: 0;
-      }
-      main {
-        overflow: hidden;
-        width: 1080px;
-        height: 1920px;
-      }
-      /* img {
-        max-width: 100%;
-      } */
-      video {
-        max-width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="map.css">
   </head>
   <body>
-    <main>
-      <!-- IMAGE -->
-      <img src="img/dot.png" alt="" />
-      <!-- VIDEO -->
-      <!--
-      <img
-        src="https://placeholders-for-codepens.s3.us-east-2.amazonaws.com/NY_Manhattan_DigitalPanels_CatchTrain.jpg"
-        alt=""
-      />
-        <video
-                src="https://placeholders-for-codepens.s3.us-east-2.amazonaws.com/Right_JetBluePR.mp4"
-                autoplay
-                muted
-            ></video> -->
-    </main>
-
-    <!-- <script>
-      setTimeout(refresh, 15000)
-      function refresh() {
-        location.reload(true)
-      }
-    </script> -->
+    <img class="mosaic" src="mosaic.png">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="map.js"></script>
   </body>
 </html>
